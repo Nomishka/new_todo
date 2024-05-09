@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(180deg, #dd3467, yellow);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  color: blue;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  min-height: 40px;
+}
+
+form input {
+  width: 30%;
+  border-radius: 20px;
+  background-image: linear-gradient(yellow, orange);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 30px;
+  border: 2px solid orange;
+}
+
+form button {
+  width: 60px;
+  border-radius: 20px;
+  background-image: linear-gradient(yellow, orange);
+  border: 2px solid orange;
+  color: darkmagenta;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+form button:hover {
+  color: white;
+  background: orange;
+  border: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.todo-filter {
+    background-color: orange;
+    width: 170px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    color: black;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+  font-size: 25px;
+}
+
+.todo-list {
+  list-style: none;
+  width: 500px;
+  color: white;
+}
+
+.todo-container {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.todo-container li {
+  flex: 1;
+}
+
+.fa-trash, .fa-check {
+  pointer-events: none;
+}
+
+.todo-complete {
+  background-color: greenyellow;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  margin-right: 5px;
+}
+
+.todo-trash {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.fall {
+  transition: 0.3s linear all;
+  transform: translateY(42px); 
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

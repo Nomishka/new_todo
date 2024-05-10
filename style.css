@@ -30,7 +30,7 @@ header {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .todo-item:hover {

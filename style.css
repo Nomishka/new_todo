@@ -5,8 +5,7 @@
 }
 
 body {
-  
-  background-color: #f4975c; 
+  background-image: linear-gradient(180deg, #dd3467, yellow);
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
 }
@@ -52,7 +51,7 @@ form input {
   min-width: 200px;
   max-width: 500px;
   border-radius: 20px;
-  background-image: white;
+  background-image: linear-gradient(yellow, orange);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -86,7 +85,7 @@ select {
 }
 
 .todo-filter {
-  background-color: yellow;
+  background-color: orange;
   width: 170px;
   border-radius: 20px;
   padding: 20px;
@@ -94,7 +93,7 @@ select {
   margin-left: 10px;
   color: black;
   text-align: center;
-  border: 2px solid orange;
+  border: 2px solid yellow;
 }
 
 .list-container {
@@ -111,11 +110,11 @@ select {
   align-items: center;
   list-style: none;
   width: 500px;
-  color: blue;
+  color: white;
 }
 
 .todo-container {
-  background-color: white;
+  background-color: blue;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -149,7 +148,7 @@ select {
 }
 
 .todo-trash {
-  background-color: red;
+  background-color: white;
   border: none;
   font-size: 20px;
   padding: 10px;

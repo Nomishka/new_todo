@@ -26,16 +26,17 @@ header {
 }
 
 .todo-item {
-  line-clamp: 2;
-  overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  opacity: 0.9;
 }
 
 .todo-item:hover {
   display: block;
+  opacity: 1;
+  transition: 0.3s ease all;
 }
 
 form {

@@ -10,23 +10,45 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 header {
   color: blue;
-  font-size: 3.5rem;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+}
+
+.todo-item {
+  line-clamp: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.todo-item:hover {
+  display: block;
 }
 
 form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 60px;
   min-height: 40px;
 }
 
 form input {
-  width: 30%;
+  min-width: 200px;
+  max-width: 500px;
   border-radius: 20px;
   background-image: linear-gradient(yellow, orange);
   padding-top: 10px;
@@ -54,34 +76,37 @@ form button:hover {
 }
 
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: none;
-    border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
 }
 
 .todo-filter {
-    background-color: orange;
-    width: 170px;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 20px;
-    margin-left: 10px;
-    color: black;
-    text-align: center;
-    border: 2px solid yellow;
+  background-color: orange;
+  width: 170px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 10px;
+  color: black;
+  text-align: center;
+  border: 2px solid yellow;
 }
 
 .list-container {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  width: 100%;
+  min-width: auto;
   font-size: 25px;
 }
 
 .todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
   width: 500px;
   color: white;
@@ -92,16 +117,22 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .todo-container li {
   flex: 1;
+  min-width: 150px;
+  max-width: 300px;
 }
 
-.fa-trash, .fa-check {
+.fa-trash,
+.fa-check {
   pointer-events: none;
 }
 
@@ -123,11 +154,76 @@ select {
 
 .fall {
   transition: 0.3s linear all;
-  transform: translateY(42px); 
+  transform: translateY(42px);
   opacity: 0;
 }
 
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+@media (max-width: 790px) {
+  form input,
+  button {
+    height: 50px;
+  }
+
+  .todo-filter {
+    height: 50px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 766px) {
+  .todo-filter {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 586px) {
+  form button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .todo-filter {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  form input {
+    height: 45px;
+  }
+
+  form button {
+    height: 45px;
+  }
+
+  .todo-filter {
+    height: 45px;
+    font-size: 15px;
+    padding: 5px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 340px) {
+  form button {
+    width: 50px;
+    height: 40px;
+  }
+
+  .todo-filter {
+    width: 80px;
+    height: 40px;
+  }
 }

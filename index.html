@@ -18,25 +18,27 @@
 </head>
 
 <body>
-    <header>
-        <div>Nomishka's Todo List</div>
-    </header>
+    <div class="container">
+        <header>
+            <div>Nomishka's Todo List</div>
+        </header>
 
-    <form>
-        <input class="todo-input" type="text">
-        <button class="todo-button" type="submit">
-            <i class="fa fa-plus"></i>
-        </button>
-        <div class="select">
-            <select name="todos" class="todo-filter">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="uncompleted">Uncompleted</option>
-            </select>
+        <form>
+            <input class="todo-input" type="text">
+            <button class="todo-button" type="submit">
+                <i class="fa fa-plus"></i>
+            </button>
+            <div class="select">
+                <select name="todos" class="todo-filter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </form>
+        <div class="list-container">
+            <ul class="todo-list"></ul>
         </div>
-    </form>
-    <div class="list-container">
-        <ul class="todo-list"></ul>
     </div>
 
 

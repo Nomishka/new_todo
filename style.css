@@ -12,7 +12,7 @@ body {
 
 .container {
   min-height: 100vh;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -115,6 +115,7 @@ select {
 
 .todo-container {
   background-color: blue;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,6 +163,14 @@ select {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+@media (hover: none) {
+  form button:hover {
+    color: darkmagenta;
+    background: linear-gradient(yellow, orange);
+    border: 2px solid orange;
+  }
 }
 
 @media (max-width: 790px) {
